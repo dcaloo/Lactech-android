@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LacTech</string>
+    <string name="home_title">Início</string>
+    <string name="faq_title">FAQ</string>
+    <string name="chatbot_title">Lacty Bot</string>
+</resources>

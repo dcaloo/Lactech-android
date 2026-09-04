@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lactare_azul">#0147A9</color>
+    <color name="lactare_azul_secondary">#004585</color>
+    <color name="lactare_nav">#8DE0FF</color>
+    <color name="lactare_page">#F2C94C</color>
+    <color name="background_light">#F8FBFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#0B1F3A</color>
+</resources>

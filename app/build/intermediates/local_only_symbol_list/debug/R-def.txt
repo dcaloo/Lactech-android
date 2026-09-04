@@ -1,0 +1,20 @@
+R_DEF: Internal format may change without notice
+local
+color background_light
+color black
+color lactare_azul
+color lactare_azul_secondary
+color lactare_nav
+color lactare_page
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string chatbot_title
+string faq_title
+string home_title
+style Theme.LacTech
+xml backup_rules
+xml data_extraction_rules
