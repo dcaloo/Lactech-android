@@ -1,79 +1,61 @@
-# LacTech — Aplicativo Android (Kotlin + Jetpack Compose)
+# LacTech
 
-Aplicativo Android nativo em **Kotlin** desenvolvido com a moderna arquitetura **Jetpack Compose (Material 3)** para o projeto **LacTech**, focado no apoio ao programa **Lactare** (doação de leite humano).
+Aplicativo Android desenvolvido em apoio ao programa **Lactare**, iniciativa da Eurofarma voltada à doação de leite humano e ao cuidado com recém-nascidos que dependem desse alimento. O LacTech centraliza informações confiáveis sobre o processo de doação e oferece um canal de atendimento rápido para tirar dúvidas.
 
----
+## Sobre o projeto
 
-## 📱 As 3 Telas do Aplicativo
+A doação de leite humano é um ato voluntário em que mulheres que estão amamentando doam seu excedente para alimentar bebês prematuros ou de baixo peso internados em UTIs neonatais. O leite passa por rigorosas análises físico-químicas e microbiológicas e é pasteurizado em Bancos de Leite Humano antes de chegar aos bebês.
 
-### 1. 🏠 Tela Home (`HomeScreen.kt`)
-- **Apresentação e Hero Banner:** Conscientização sobre a doação de leite materno com atalhos rápidos para o Chatbot e FAQ.
-- **Seção "O que é?":** Explicação sobre o ato voluntário da doação para alimentar bebês prematuros em UTIs neonatais.
-- **Seção "Quem Somos?":** Contexto do projeto LacTech em parceria e apoio ao programa Lactare (Eurofarma).
-- **Impacto do Programa Lactare:** Cards interativos com os 6 principais dados estatísticos de impacto social.
-- **Rodapé Institucional:** Direitos reservados e termos.
+O objetivo do LacTech é facilitar o acesso a essas informações, explicando de forma simples quem pode doar, como funciona o processo, onde buscar atendimento e qual o impacto real do programa.
 
-### 2. ❓ Tela FAQ (`FaqScreen.kt`)
-- **Barra de Busca Instantânea:** Filtragem dinâmica de perguntas e respostas por palavras-chave.
-- **Acordeão Interativo (Accordion):** Todas as 10 perguntas e respostas originais em cards expansíveis com animações suaves de rotação e expansão.
-- **Controle Rápido:** Botão para "Expandir todas" ou "Recolher todas".
+## Funcionalidades
 
-### 3. 🤖 Tela Chatbot - Lacty (`ChatbotScreen.kt` + `ChatViewModel.kt`)
-- **Identidade do Robô Lacty:** Avatar desenhado em Canvas/Vetorial e indicador de status online.
-- **Chips de Perguntas Rápidas:** Sugestões de dúvidas frequentes ("Como doar?", "Onde doar?", "É gratuito?", etc.) com envio em 1 toque.
-- **Motor de Respostas Inteligente em Kotlin:** Sistema nativo de inferência de intenções e respostas contextuais, com indicador de digitação ("Lacty está digitando...") e rolagem automática da conversa.
-- **Histórico e Limpeza:** Visualização de balões de mensagem estilizados e opção de reiniciar a conversa.
+- **Início**: apresentação do programa, explicação sobre o que é a doação de leite humano, quem está por trás do projeto e números de impacto do Lactare (litros coletados, doadoras cadastradas, bancos e postos de coleta pelo país).
+- **FAQ**: lista de perguntas frequentes em formato acordeão, com busca por palavra-chave e opção de expandir/recolher todas as respostas de uma vez.
+- **Lacty (Chatbot)**: assistente virtual que responde perguntas comuns sobre doação, coleta, armazenamento do leite e o programa, com sugestões rápidas de perguntas e histórico de conversa.
 
----
+## Tecnologias
 
-## 🏗️ Estrutura do Projeto
+- **Kotlin**
+- **Jetpack Compose** para toda a interface
+- **Navigation Compose** para a navegação entre telas
+- **StateFlow / ViewModel** para o gerenciamento de estado do chat
+- **Material 3** como base de componentes visuais
+
+## Arquitetura e navegação
+
+A navegação segue o padrão de pilha do Navigation Compose:
+
+- `AppNavGraph` concentra o `NavHost` e registra as rotas disponíveis (`home`, `faq`, `chatbot`).
+- Cada tela recebe funções de callback (`onNavigateToFaq`, `onNavigateToChatbot`, `onBackClick`) em vez do `NavController` diretamente, mantendo a lógica de navegação isolada no grafo.
+- A tela inicial (Home) é o ponto de partida da pilha; FAQ e Chatbot são abertas a partir dela e possuem uma barra superior com botão de voltar, que retorna à tela anterior via `popBackStack()`.
+
+## Estrutura de pastas
 
 ```
-android/
-├── build.gradle.kts                      # Configuração Gradle do projeto
-├── settings.gradle.kts                   # Configurações de módulos e repositórios
-├── gradle.properties                     # Propriedades de compilação JVM / AndroidX
-├── app/
-    ├── build.gradle.kts                  # Dependências: Compose, Material3, Navigation, ViewModel
-    ├── src/main/
-        ├── AndroidManifest.xml           # Manifesto do App
-        ├── res/                          # Recursos (strings, colors, themes, xml)
-        └── java/com/lactech/app/
-            ├── MainActivity.kt           # Activity principal
-            ├── data/                     # Modelos de dados e provedores
-            │   ├── FaqItem.kt
-            │   ├── ImpactCardItem.kt
-            │   └── ChatMessage.kt
-            ├── viewmodel/                # Lógica de negócio e estado reativo
-            │   └── ChatViewModel.kt
-            ├── ui/
-                ├── theme/                # Paleta de cores, tipografia e tema
-                │   ├── Color.kt
-                │   ├── Type.kt
-                │   └── Theme.kt
-                ├── navigation/           # Rotas e gerenciamento de navegação
-                │   ├── Screen.kt
-                │   └── NavGraph.kt
-                ├── components/           # Componentes reutilizáveis
-                │   ├── AppTopBar.kt
-                │   ├── AppBottomBar.kt
-                │   ├── FaqAccordionCard.kt
-                │   ├── ImpactCard.kt
-                │   ├── ChatMessageBubble.kt
-                │   └── LactyAvatar.kt
-                └── screens/              # As 3 telas do app
-                    ├── HomeScreen.kt
-                    ├── FaqScreen.kt
-                    └── ChatbotScreen.kt
+com.lactech.app
+├── data                    # Modelos e provedores de dados (FAQ, mensagens do chat, cards de impacto)
+├── ui
+│   ├── components           # Componentes reutilizáveis (barra superior, bolhas de chat, cards, avatar do Lacty)
+│   ├── navigation            # AppNavGraph e definição das telas (Screen)
+│   ├── screens                # Telas do app: HomeScreen, FaqScreen, ChatbotScreen
+│   └── theme                   # Cores, tipografia e tema do Material 3
+├── viewmodel                # ChatViewModel, responsável pela lógica do chatbot Lacty
+└── MainActivity.kt
 ```
 
----
+## Requisitos
 
-## 🚀 Como Abrir e Executar no Android Studio
+- Android Studio (versão recente com suporte a Kotlin DSL)
+- SDK mínimo: API 24 (Android 7.0 Nougat)
 
-1. Abra o **Android Studio**.
-2. Selecione **Open** e navegue até a pasta `d:\LacTech\android` (ou a pasta onde o projeto foi clonado).
-3. Aguarde o **Gradle Sync** concluir o download das dependências.
-4. Selecione um emulador (ou conecte seu smartphone com depuração USB habilitada).
-5. Clique no botão **Run (▶)** (ou pressione `Shift + F10`).
+## Como executar
 
+1. Clone ou baixe este repositório.
+2. Abra o projeto no Android Studio.
+3. Aguarde a sincronização do Gradle.
+4. Execute em um emulador ou dispositivo físico com Android 7.0 ou superior.
+
+## Créditos
+
+Projeto desenvolvido como parte de um curso de desenvolvimento Android com Kotlin e Jetpack Compose, em apoio ao programa Lactare, da Eurofarma.
