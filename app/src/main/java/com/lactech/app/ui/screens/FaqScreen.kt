@@ -58,7 +58,6 @@ fun FaqScreen(
     var searchQuery by remember { mutableStateOf("") }
     val expandedStates = remember {
         mutableStateMapOf<Int, Boolean>().apply {
-            // Start with the first question open, matching the web page (collapseOne show)
             put(1, true)
         }
     }
@@ -100,7 +99,7 @@ fun FaqScreen(
         item {
             Spacer(modifier = Modifier.height(12.dp))
 
-            // Title & Intro
+
             Column(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalAlignment = Alignment.CenterHorizontally
@@ -126,7 +125,7 @@ fun FaqScreen(
 
             Spacer(modifier = Modifier.height(14.dp))
 
-            // Search Bar
+
             OutlinedTextField(
                 value = searchQuery,
                 onValueChange = { searchQuery = it },
@@ -162,7 +161,7 @@ fun FaqScreen(
 
             Spacer(modifier = Modifier.height(6.dp))
 
-            // Stats / Expand toggle row
+
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceBetween,

@@ -73,7 +73,7 @@ fun ChatbotScreen(
     var inputMessage by remember { mutableStateOf("") }
     val listState = rememberLazyListState()
 
-    // Auto-scroll to bottom when new messages arrive or when bot starts typing
+
     LaunchedEffect(messages.size, isTyping) {
         if (messages.isNotEmpty()) {
             listState.animateScrollToItem(messages.size - 1)
@@ -102,7 +102,7 @@ fun ChatbotScreen(
             .background(AppBackground)
             .imePadding()
     ) {
-        // Chatbot Header Card
+
         Surface(
             modifier = Modifier.fillMaxWidth(),
             color = AppSurface,
@@ -156,7 +156,7 @@ fun ChatbotScreen(
             }
         }
 
-        // Quick Suggestion Chips Row
+
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -175,7 +175,7 @@ fun ChatbotScreen(
 
         Divider(color = DividerColor, thickness = 1.dp)
 
-        // Chat Messages List
+
         LazyColumn(
             state = listState,
             modifier = Modifier
@@ -216,7 +216,7 @@ fun ChatbotScreen(
             }
         }
 
-        // Input Field & Send Button
+
         Surface(
             modifier = Modifier.fillMaxWidth(),
             color = AppSurface,

@@ -38,7 +38,6 @@ fun LactyAvatar(
             val scaleX = w / 64f
             val scaleY = h / 64f
 
-            // Antenna
             drawCircle(
                 color = Color(0xFF38BDF8),
                 radius = 4.5f * scaleX,
@@ -56,7 +55,7 @@ fun LactyAvatar(
                 cornerRadius = CornerRadius(2f * scaleX, 2f * scaleY)
             )
 
-            // Ears / Headphones
+
             drawRoundRect(
                 color = Color(0xFF0284C7),
                 topLeft = Offset(6f * scaleX, 24f * scaleY),
@@ -80,7 +79,7 @@ fun LactyAvatar(
                 center = Offset(55f * scaleX, 32f * scaleY)
             )
 
-            // Head Base
+
             drawRoundRect(
                 brush = Brush.linearGradient(
                     colors = listOf(Color(0xFF38BDF8), Color(0xFF0284C7), Color(0xFF0369A1)),
@@ -92,7 +91,7 @@ fun LactyAvatar(
                 cornerRadius = CornerRadius(14f * scaleX, 14f * scaleY)
             )
 
-            // Faceplate Screen
+
             drawRoundRect(
                 brush = Brush.verticalGradient(
                     colors = listOf(Color(0xFF0B1329), Color(0xFF1E293B)),
@@ -104,7 +103,7 @@ fun LactyAvatar(
                 cornerRadius = CornerRadius(9f * scaleX, 9f * scaleY)
             )
 
-            // Cheeks
+
             drawCircle(
                 color = Color(0xFFF43F5E).copy(alpha = 0.75f),
                 radius = 2.2f * scaleX,
@@ -116,7 +115,7 @@ fun LactyAvatar(
                 center = Offset(44f * scaleX, 38f * scaleY)
             )
 
-            // Left Eye
+
             drawCircle(
                 brush = Brush.linearGradient(
                     colors = listOf(Color(0xFF67E8F9), Color(0xFF06B6D4))
@@ -130,7 +129,7 @@ fun LactyAvatar(
                 center = Offset(24.5f * scaleX, 28.5f * scaleY)
             )
 
-            // Right Eye
+
             drawCircle(
                 brush = Brush.linearGradient(
                     colors = listOf(Color(0xFF67E8F9), Color(0xFF06B6D4))
@@ -144,7 +143,7 @@ fun LactyAvatar(
                 center = Offset(42.5f * scaleX, 28.5f * scaleY)
             )
 
-            // Smile
+
             val smilePath = Path().apply {
                 moveTo(27f * scaleX, 37f * scaleY)
                 quadraticBezierTo(

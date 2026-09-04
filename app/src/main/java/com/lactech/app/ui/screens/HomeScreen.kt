@@ -158,7 +158,7 @@ fun HomeScreen(
                 }
             }
 
-            // Section "O que é?"
+
             item {
                 InfoSectionCard(
                     icon = Icons.Default.Favorite,
@@ -168,7 +168,6 @@ fun HomeScreen(
                 )
             }
 
-            // Section "Quem Somos?"
             item {
                 InfoSectionCard(
                     icon = Icons.Default.Info,
@@ -178,7 +177,6 @@ fun HomeScreen(
                 )
             }
 
-            // Section Header "Impacto do programa Lactare"
             item {
                 Column(
                     modifier = Modifier.fillMaxWidth().padding(top = 8.dp)
@@ -197,12 +195,10 @@ fun HomeScreen(
                 }
             }
 
-            // 6 Impact Cards
             items(ImpactDataProvider.impactItems) { item ->
                 ImpactCard(item = item)
             }
 
-            // Footer Section
             item {
                 Card(
                     modifier = Modifier.fillMaxWidth().padding(vertical = 12.dp),

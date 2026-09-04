@@ -48,7 +48,7 @@ class ChatViewModel : ViewModel() {
 
         viewModelScope.launch {
             _isTyping.value = true
-            delay(450) // Natural response time
+            delay(450)
 
             val replyText = generateBotReply(trimmed)
             val botMessage = ChatMessage(
