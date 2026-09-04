@@ -1,34 +1,34 @@
 [
     {
-        "merged": "C:\\Users\\dudy2\\.gradle\\daemon\\8.5\\com.lactech.app-merged_res-51:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\dudy2\\.gradle\\daemon\\8.5\\com.lactech.app-main-53:\\xml\\data_extraction_rules.xml"
+        "merged": "com.lactech.app-merged_res-53:/xml_backup_rules.xml.flat",
+        "source": "com.lactech.app-main-55:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.lactech.app-merged_res-51:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.lactech.app-main-53:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.lactech.app-merged_res-53:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.lactech.app-main-55:/mipmap-anydpi/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\dudy2\\.gradle\\daemon\\8.5\\com.lactech.app-merged_res-51:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\dudy2\\.gradle\\daemon\\8.5\\com.lactech.app-main-53:\\xml\\backup_rules.xml"
+        "merged": "com.lactech.app-merged_res-53:/xml_data_extraction_rules.xml.flat",
+        "source": "com.lactech.app-main-55:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.lactech.app-merged_res-51:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.lactech.app-main-53:/drawable/ic_launcher_background.xml"
+        "merged": "com.lactech.app-merged_res-53:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.lactech.app-main-55:/mipmap-anydpi/ic_launcher.xml"
     },
     {
-        "merged": "com.lactech.app-merged_res-51:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.lactech.app-main-53:/drawable/ic_launcher_foreground.xml"
+        "merged": "com.lactech.app-merged_res-53:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.lactech.app-main-55:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\dudy2\\.gradle\\daemon\\8.5\\com.lactech.app-merged_res-51:\\mipmap-anydpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\dudy2\\.gradle\\daemon\\8.5\\com.lactech.app-main-53:\\mipmap-anydpi\\ic_launcher_round.xml"
+        "merged": "com.lactech.app-merged_res-53:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.lactech.app-main-55:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.lactech.app-merged_res-51:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.lactech.app-main-53:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.lactech.app-merged_res-53:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.lactech.app-main-55:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\dudy2\\.gradle\\daemon\\8.5\\com.lactech.app-merged_res-51:\\mipmap-anydpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\dudy2\\.gradle\\daemon\\8.5\\com.lactech.app-main-53:\\mipmap-anydpi\\ic_launcher.xml"
+        "merged": "com.lactech.app-merged_res-53:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.lactech.app-main-55:/drawable/ic_launcher_background.xml"
     }
 ]

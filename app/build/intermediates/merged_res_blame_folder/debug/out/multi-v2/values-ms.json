@@ -1,44 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "com.lactech.app-mergeDebugResources-49:/values-ms/values-ms.xml",
+            "outputFile": "com.lactech.app-mergeDebugResources-51:/values-ms/values-ms.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\dudy2\\.gradle\\caches\\transforms-3\\440a64c1659b3784956be1ef27019da1\\transformed\\core-1.12.0\\res\\values-ms\\values-ms.xml",
+                    "source": "C:\\Users\\dudy2\\.gradle\\caches\\transforms-3\\fd6ed0de20ed1c0537ac7f1bf5e62963\\transformed\\ui-release\\res\\values-ms\\values-ms.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,150,252,349,459,565,683,798",
-                        "endColumns": "94,101,96,109,105,117,114,100",
-                        "endOffsets": "145,247,344,454,560,678,793,894"
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,195,279,375,477,562,645,740,827,912,997,1083,1155,1232,1305,1378,1454,1520",
+                        "endColumns": "89,83,95,101,84,82,94,86,84,84,85,71,76,72,72,75,65,119",
+                        "endOffsets": "190,274,370,472,557,640,735,822,907,992,1078,1150,1227,1300,1373,1449,1515,1635"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,79",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,200,302,399,509,615,733,8232",
-                        "endColumns": "94,101,96,109,105,117,114,100",
-                        "endOffsets": "195,297,394,504,610,728,843,8328"
+                        "startLines": "9,10,11,12,13,14,15,72,73,74,75,76,77,78,79,81,82,83",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "848,938,1022,1118,1220,1305,1388,7684,7771,7856,7941,8027,8099,8176,8249,8423,8499,8565",
+                        "endColumns": "89,83,95,101,84,82,94,86,84,84,85,71,76,72,72,75,65,119",
+                        "endOffsets": "933,1017,1113,1215,1300,1383,1478,7766,7851,7936,8022,8094,8171,8244,8317,8494,8560,8680"
                     }
                 },
                 {
-                    "source": "C:\\Users\\dudy2\\.gradle\\caches\\transforms-3\\5bbe67b4e1976cf3ed30f61ba556027f\\transformed\\ui-release\\res\\values-ms\\values-ms.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,195,279,375,477,562,645,740,827,912,978,1045,1130,1216,1288,1364,1430",
-                        "endColumns": "89,83,95,101,84,82,94,86,84,65,66,84,85,71,75,65,119",
-                        "endOffsets": "190,274,370,472,557,640,735,822,907,973,1040,1125,1211,1283,1359,1425,1545"
-                    },
-                    "to": {
-                        "startLines": "9,10,11,12,13,14,15,72,73,74,75,76,77,78,80,81,82",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "848,938,1022,1118,1220,1305,1388,7684,7771,7856,7922,7989,8074,8160,8333,8409,8475",
-                        "endColumns": "89,83,95,101,84,82,94,86,84,65,66,84,85,71,75,65,119",
-                        "endOffsets": "933,1017,1113,1215,1300,1383,1478,7766,7851,7917,7984,8069,8155,8227,8404,8470,8590"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\dudy2\\.gradle\\caches\\transforms-3\\6ce9c11e848992c353af098ae2a01c4a\\transformed\\foundation-release\\res\\values-ms\\values-ms.xml",
+                    "source": "C:\\Users\\dudy2\\.gradle\\caches\\transforms-3\\61592e42ee2318b9d202089418dd2cd7\\transformed\\foundation-release\\res\\values-ms\\values-ms.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -47,11 +30,28 @@
                         "endOffsets": "137,228"
                     },
                     "to": {
-                        "startLines": "83,84",
+                        "startLines": "84,85",
                         "startColumns": "4,4",
-                        "startOffsets": "8595,8682",
+                        "startOffsets": "8685,8772",
                         "endColumns": "86,90",
-                        "endOffsets": "8677,8768"
+                        "endOffsets": "8767,8858"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dudy2\\.gradle\\caches\\transforms-3\\2307ebdc95d34b227f05bc814e10ce3e\\transformed\\core-1.13.1\\res\\values-ms\\values-ms.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,150,252,349,459,565,683,798",
+                        "endColumns": "94,101,96,109,105,117,114,100",
+                        "endOffsets": "145,247,344,454,560,678,793,894"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,80",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,200,302,399,509,615,733,8322",
+                        "endColumns": "94,101,96,109,105,117,114,100",
+                        "endOffsets": "195,297,394,504,610,728,843,8418"
                     }
                 },
                 {

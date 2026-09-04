@@ -47,7 +47,6 @@ import com.lactech.app.ui.theme.AppSurface
 import com.lactech.app.ui.theme.CardBorderColor
 import com.lactech.app.ui.theme.LactareAzul
 import com.lactech.app.ui.theme.LactareAzulSecondary
-import com.lactech.app.ui.theme.TextPrimary
 import com.lactech.app.ui.theme.TextSecondary
 
 @OptIn(ExperimentalMaterial3Api::class)

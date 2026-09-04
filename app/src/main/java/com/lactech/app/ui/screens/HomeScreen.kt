@@ -21,14 +21,12 @@ import androidx.compose.material.icons.filled.Chat
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.QuestionAnswer
-import androidx.compose.material.icons.filled.Share
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Divider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -47,13 +45,11 @@ import com.lactech.app.ui.components.ImpactCard
 import com.lactech.app.ui.components.LactyAvatar
 import com.lactech.app.ui.theme.AppBackground
 import com.lactech.app.ui.theme.AppSurface
-import com.lactech.app.ui.theme.CardBorderColor
 import com.lactech.app.ui.theme.DividerColor
 import com.lactech.app.ui.theme.LactareAzul
 import com.lactech.app.ui.theme.LactareAzulSecondary
 import com.lactech.app.ui.theme.LactareLightBlue
 import com.lactech.app.ui.theme.LactareNav
-import com.lactech.app.ui.theme.LactarePage
 import com.lactech.app.ui.theme.TextPrimary
 import com.lactech.app.ui.theme.TextSecondary
 
