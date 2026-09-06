@@ -75,6 +75,9 @@ com.lactech.app
 3. Aguarde a sincronização do Gradle.
 4. Execute em um emulador ou dispositivo físico com Android 7.0 ou superior.
 
+## Video navegação
+https://youtu.be/AP8GCb_CLBI
+
 ## Créditos
 
 Projeto desenvolvido como parte de um curso de desenvolvimento Android com Kotlin e Jetpack Compose, em apoio ao programa Lactare, da Eurofarma.
